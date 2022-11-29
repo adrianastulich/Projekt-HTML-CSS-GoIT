@@ -1,0 +1,32 @@
+//Variables
+@import './utils/reset';
+@import './utils/variables';
+
+//General Components
+@import './components/global';
+@import './components/page-button';
+@import './components/page-footer-newsletter';
+@import './components/page-footer';
+@import './components/page-header-contacts';
+@import './components/page-header';
+@import './components/page-logo';
+@import './components/page-nav';
+@import './components/page-socialmedia';
+
+//Modal Components
+@import './components/modal-backdrop';
+@import './components/modal';
+
+//Portfolio Components
+@import './components/portfolio-grid';
+@import './components/portfolio-menu';
+@import './components/portfolio-overlay';
+
+//Studio Components
+@import './components/studio-clients';
+@import './components/studio-descriptions';
+@import './components/studio-order';
+@import './components/studio-services';
+@import './components/studio-team';
+
+

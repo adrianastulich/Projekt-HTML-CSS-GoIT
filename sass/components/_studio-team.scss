@@ -1,0 +1,50 @@
+.team {
+    background: var(--subsection-background-color);
+    height: 708px;
+    &__list{
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  .teamcard {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--brand-color);
+    box-shadow: 0px 1px 3px var(--second-shadow-color), 0px 1px 1px var(--third-shadow-color),
+      0px 2px 1px var(--forth-shadow-color);
+    border-radius: 0px 0px 4px 4px;
+    &__description{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &__name{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.172rem;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    &__position{
+      font-size: 16px;
+      line-height: 1.172rem;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--text-color);
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    &__socialmedia{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      list-style-type: none;
+    }
+    }
+  
