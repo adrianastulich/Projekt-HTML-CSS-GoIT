@@ -12,12 +12,39 @@ body {
     height: auto;
   }
   
+  // .container {
+  //   width: 1200px;
+  //   padding: 0 15px;
+  //   margin: 0 auto;
+  // }
+  
   .container {
-    width: 1200px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+  
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
+  // .section {
+  //   padding-top: 94px;
+  //   padding-bottom: 94px;
+  // }
+
   .section {
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     padding-top: 94px;
     padding-bottom: 94px;
   }
