@@ -4,22 +4,39 @@
     url(../images/background-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
-  max-width: 1600px;
+  background-position: 40% 50%;
+  height: 400px;
+  max-width: 100vw;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   &__title{
     color: var(--brand-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 3.75rem;
+    font-size: 26px;
+    line-height: 42px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0 auto;
     margin-bottom: 30px;
     flex-wrap: wrap;
-    width: 696px;
+    width: 365px;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      max-width: 696px;
+      line-height: 3.75rem;
+    }
   }
+  @media screen and (min-width: 1200px){
+    height: 600px;
+    padding: 200px 0;
+  }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-image.jpg);}
+   
 }

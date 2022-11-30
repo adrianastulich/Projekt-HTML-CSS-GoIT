@@ -1,14 +1,18 @@
 .clients {
-    height: 372px;
+    height: 520px;
     &__list{
       list-style-type: none;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 372px;
     }
   }
   .clientslist__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
@@ -22,6 +26,10 @@
       &:hover{
         fill: var(--active-color);
         border-color: var(--active-color);
+      }
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
       }
   }
   

@@ -1,13 +1,28 @@
 .team {
-    background: var(--subsection-background-color);
-    height: 708px;
+    background: var(--subsection-background-color); 
     &__list{
       list-style-type: none;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       gap: 30px;
+      height: 2578px;
+      @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        height: 708px;
+      }
     }
+    
+  }
+  .teamcard__image{
+    width: 450px;
+    height: 460px;
+    @media screen and (min-width: 1200px) {
+      width: 270px; 
+      height: 260px;
+    }
+    
   }
   .teamcard {
     margin: 0;
@@ -21,6 +36,11 @@
     &__description{
       padding-top: 30px;
       padding-bottom: 30px;
+      height: 162px;
+      @media screen and (min-width: 1200px) {
+        height: auto;
+        
+      }
     }
     &__name{
       font-weight: 500;
