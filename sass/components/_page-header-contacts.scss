@@ -1,9 +1,12 @@
 .contacts {
+  display:none;
+  @media screen and (min-width: 768px) {
     display: flex;
     padding: 0;
     gap: 30px;
     margin-left: auto;
   }
+}
   .contacts__icon {
     margin-right: 10px;
     fill: currentColor;

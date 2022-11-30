@@ -1,4 +1,6 @@
 .nav {
+  display:none;
+  @media screen and (min-width: 768px) {
     display: flex;
     padding: 0;
     margin: 0;
@@ -8,6 +10,18 @@
     font-size: 14px;
     line-height: 1.026rem;
     letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.026rem;
+    letter-spacing: 0.02em;
+  }
   }
   .nav__item {
     display: block;
