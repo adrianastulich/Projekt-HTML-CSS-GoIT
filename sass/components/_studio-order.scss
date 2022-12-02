@@ -22,6 +22,9 @@
     margin-bottom: 30px;
     flex-wrap: wrap;
     width: 76%;
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+      width: 365px;
+    }
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       width: 696px;
@@ -29,6 +32,7 @@
       
     }
   }
+  
   @media screen and (min-width: 1200px){
     height: 600px;
     padding: 200px 0;

@@ -7,17 +7,38 @@
       align-items: center;
       flex-direction: column;
       gap: 30px;
-      height: 2578px;
+      height: auto;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: row;
+        max-width: 738px;
+        flex-wrap: wrap;
+      }
       @media screen and (min-width: 1200px) {
         flex-direction: row;
-        height: 708px;
-      }
-    }
+        
+    }}
     
+    @media screen and (min-width: 480px) and (max-width: 767px){
+      height: 2761px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      height: 1285px;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 708px;
+    }
   }
   .teamcard__image{
-    width: 450px;
-    height: 460px;
+    width: 100%;
+    height: auto;
+    @media screen and (min-width: 480px) and (max-width: 767px){
+      width: 450px;
+      height: 460px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      width: 354px;
+      height: 374px;
+    }
     @media screen and (min-width: 1200px) {
       width: 270px; 
       height: 260px;
@@ -36,10 +57,12 @@
     &__description{
       padding-top: 30px;
       padding-bottom: 30px;
-      height: 162px;
+      height: 100%;
+      @media screen and (min-width: 480px) and (max-width: 1199px){
+        height: 162px;
+      }
       @media screen and (min-width: 1200px) {
-        height: auto;
-        
+        height: 168px;
       }
     }
     &__name{

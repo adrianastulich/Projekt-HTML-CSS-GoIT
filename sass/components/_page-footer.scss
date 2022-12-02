@@ -14,12 +14,13 @@
   .footer {
     &__parts{
       display: flex;
-      justify-content: center; //nowe
+      justify-content: center;
       align-items: center;
       flex-direction: column;
       @media screen and (min-width: 1200px) {
         flex-direction: row;
         align-items: baseline;
+        justify-content: space-between;
       }
     }
     &__contacts{
@@ -67,6 +68,17 @@
     margin-bottom: 9px;
     padding: 0;
   }
+  .footer__part--row{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      display: flex;
+      flex-direction: row;
+      gap: 144px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      
+  }}
   
   
   

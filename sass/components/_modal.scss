@@ -16,13 +16,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    width: 320px;
     height: 581px;
     background-color: var(--brand-color);
     border-radius: 4px;
     transition: transform 1000ms;
     text-align: center;
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+      width:450px;
   }
+    @media screen and (min-width: 1200px){
+      width: 528px;
+  
+}}
+  
   .modal__button--close {
     display: flex;
     align-items: center;
@@ -47,13 +54,20 @@
   .modal__fieldset {
     position: relative;
     display: flex;
-    width: 448px;
+    width: 300px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     display: flex;
     align-items: center;
     padding: 9px 0 13px 12px;
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+      width:370px;
+  }
+    @media screen and (min-width: 1200px){
+      width: 448px;
+  
+}
   }
   .modal__fieldset:has(input:focus) {
     border: 1px solid var(--active-color);
@@ -111,6 +125,11 @@
   }
   .modal__statement {
     color: var(--text-color);
+    font-size: 12px;
+    @media screen and (min-width: 1200px){
+      font-size: 14px;
+  
+}
   }
   
   .modal__checkbox {
