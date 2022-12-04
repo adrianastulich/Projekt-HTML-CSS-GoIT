@@ -46,16 +46,20 @@ body {
   }
   .section__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 2.637rem;
+    font-size: 28px;
+    line-height: 2.063rem;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     color: var(--brand-text-color);
     @media screen and (min-width: 1200px) {
       margin-bottom: 50px;
+      font-size: 36px;
+    line-height: 2.637rem;
     }
   }
+  
+
   
   header {
     border-bottom: 1px solid var(--border-color);}
