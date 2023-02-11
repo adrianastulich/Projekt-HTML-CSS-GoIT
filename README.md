@@ -1,1 +1,1 @@
-# goit-markup-hw-08
+# projekt końcowy moduł HTML/CSS GoIT
